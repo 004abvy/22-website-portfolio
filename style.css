@@ -215,19 +215,17 @@ footer {
   color: #00bcd4;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
     text-align: center;
   }
 
-  nav ul {
-    flex-direction: column;
+  /* Keep nav links horizontal even on small screens */
+  .nav-links {
+    flex-direction: row;        /* ✅ Force row direction */
+    flex-wrap: wrap;            /* Optional: allow wrapping if space is tight */
+    justify-content: center;    /* Optional: center on small screen */
     gap: 1rem;
-  }
-
-  .hero-content h1 {
-    font-size: 2.2rem;
   }
 }
