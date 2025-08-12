@@ -3,36 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Abdullah Nadeem (Abvy) | Front-End Developer Portfolio</title>
-
-  <!-- SEO Meta Tags -->
-  <meta name="description" content="The official portfolio of Abdullah Nadeem (Abvy), a creative front-end web developer building modern, responsive websites.">
-  <meta name="keywords" content="Abvy, Abdullah Nadeem, Web Developer, Front-End Developer, Portfolio, HTML, CSS, JavaScript">
+  <title>Abdullah Nadeem (Abvy) | Front-End Developer & Game Programmer</title>
+  <meta name="description" content="Portfolio of Abdullah Nadeem (Abvy), a creative developer specializing in web development, game programming, and computer vision applications.">
+  <meta name="keywords" content="Abvy, Abdullah Nadeem, Web Developer, Game Developer, Unity, C#, Python, C++, Portfolio">
   <meta name="author" content="Abdullah Nadeem (Abvy)">
-
-  <!-- Open Graph for Social Sharing -->
-  <meta property="og:title" content="Abdullah Nadeem (Abvy) | Front-End Developer">
-  <meta property="og:description" content="Creative developer building fast, modern, and user-friendly websites.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="https://yourdomain.com/preview.png" /> <!-- Replace with your real image URL -->
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png" /> <!-- Upload your favicon.png -->
-
-  <!-- Fonts and Icons -->
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
   <!-- Navbar -->
   <header>
     <nav>
-      <div class="logo">Abvy</div>
+      <div class="logo">
+       <!--  <i class="fas fa-code"></i> -->
+        <span>Abvy</span>
+      </div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -44,66 +32,185 @@
 
   <!-- Hero Section -->
   <section id="home" class="hero">
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1><span>Web Designing</span> </h1>
-      <p>Web Designer & Front-End Developer</p>
-      <a href="#projects" class="btn">View Projects</a>
+      <h1>Hi, My name is <span>Abdullah Nadeem</span></h1>
+      <p>I am a passionate developer creating web experiences, games and an AI an ML researcher.</p>
+      <div class="btn-container">
+        <a href="#projects" class="btn">
+          <i class="fas fa-eye"></i> View Projects
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <i class="fas fa-paper-plane"></i> Contact Me
+        </a>
+      </div>
     </div>
   </section>
 
   <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
+  <section id="about" class="about section">
+    <h2 class="section-title">About Me</h2>
     <div class="about-content">
-      <img src="pic.jpg" alt="Pic" />
-      <div>
-        <p>My name is Abdullah. I am a creative web developer building beautiful and functional websites, learning new technologies and bringing ideas to life.</p><br>
-        <p class="lang"><strong>Languages:</strong> HTML, CSS</p>
+      <div class="about-img">
+        <img src="pic.jpg" alt="Abdullah Nadeem" />
+      </div>
+      <div class="about-text">
+        <p>I'm Abdullah Nadeem (Abvy), a passionate developer with expertise in both web and game development. I love turning ideas into reality through code and creating engaging digital experiences.</p>
+        <p>With a strong foundation in multiple programming languages and technologies, I approach each project with creativity and attention to detail, ensuring high-quality results that meet user needs.</p>
+        
+        <div class="skills">
+          <h3>Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fab fa-html5"></i>
+              <div>
+                <h4>Web Development</h4>
+                <p>HTML, CSS, Responsive Design</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-gamepad"></i>
+              <div>
+                <h4>Game Development</h4>
+                <p>Unity, C#, 2D Games</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-python"></i>
+              <div>
+                <h4>Python</h4>
+                <p>Computer Vision, Automation</p>
+              </div>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-code"></i>
+              <div>
+                <h4>C++</h4>
+                <p>Algorithms, Problem Solving</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="projects">
-    <h2>My Projects</h2>
+  <section id="projects" class="projects section">
+    <h2 class="section-title">My Projects</h2>
     <div class="project-grid">
       <div class="project-card">
-        <h3>Landing Page</h3>
-        <p>A clean and responsive product landing page.</p>
+        <div class="project-img web">
+          <i class="fas fa-laptop-code"></i>
+        </div>
+        <div class="project-info">
+          <h3>Modern Landing Page</h3>
+          <p>A clean, responsive product landing page with mobile-friendly design.</p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Responsive</span>
+          </div>
+        </div>
       </div>
+      
       <div class="project-card">
-        <h3>Blog Design</h3>
-        <p>Modern blog layout with sidebar and pagination.</p>
+        <div class="project-img game">
+          <i class="fas fa-gamepad"></i>
+        </div>
+        <div class="project-info">
+          <h3>Flappy Bird Clone</h3>
+          <p>A fully functional Flappy Bird game with animations and scoring system built in Unity.</p>
+          <div class="project-tags">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">2D Game</span>
+          </div>
+        </div>
       </div>
+      
       <div class="project-card">
-        <h3>Login UI</h3>
-        <p>Stylish login form with shadows and animation.</p>
+        <div class="project-img python">
+          <i class="fas fa-hands"></i>
+        </div>
+        <div class="project-info">
+          <h3>Sign Language Detection</h3>
+          <p>Real-time sign language recognition using computer vision techniques.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">OpenCV</span>
+            <span class="tag">AI</span>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-   <form action="https://formspree.io/f/xvgqkgya" method="POST">
-  <input type="hidden" name="_next" value="https://004abvy.github.io/22-website-portfolio/thank-you.html">
-
-  <input type="text" name="name" placeholder="Your Name" required />
-  <input type="email" name="email" placeholder="Your Email" required />
-  <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-  <button type="submit" class="btn">Send Message</button>
-</form>
-
+  <section id="contact" class="contact section">
+    <h2 class="section-title">Get In Touch</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Contact Information</h3>
+        <div class="contact-details">
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:your.email@example.com">your.email@example.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h4>Phone</h4>
+              <p>+92 318 8164861</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Location</h4>
+              <p>Lahore, Pakistan</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <form action="https://formspree.io/f/xvgqkgya" method="POST">
+        <input type="hidden" name="_next" value="https://004abvy.github.io/22-website-portfolio/thank-you.html">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" name="name" placeholder="John Doe" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input type="email" id="email" name="email" placeholder="john@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" placeholder="Hello, I'd like to talk about..." required></textarea>
+        </div>
+        <button type="submit" class="btn">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Abvy. All rights reserved.</p>
-    <div class="socials">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
+    <div class="footer-content">
+      <div class="logo">
+        <!-- <i class="fas fa-code"></i> -->
+        <span>Abvy</span>
+      </div>
+      <div class="socials">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p class="copyright">© 2025 Abdullah Nadeem. All rights reserved.</p>
     </div>
   </footer>
-
 </body>
 </html>
